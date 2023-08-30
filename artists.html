@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists' Profiles</title>
+    <style>
+           .navbar {
+    text-align: center;
+    background-color: #444;
+    padding: 10px 0;
+    color: #fff;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #00a86b;
+  }
+    </style>
+</head>
+<body>
+    </html><div class="navbar">
+        <a href="exhibition.html">Exhibitions</a>
+        <a href="artists.html">Artists' Profiles</a>
+        <a href="mycart.html">My Cart</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="blog.html">Blog Subscription</a>
+      </div>
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+  }
+
+  .artist-profile {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .artist-photo {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .artist-info {
+    padding: 20px;
+  }
+
+  .artist-name {
+    font-size: 24px;
+    color: #00a86b;
+    margin-bottom: 10px;
+  }
+
+  .artist-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-btn {
+    background-color: #00a86b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .portfolio-btn:hover {
+    background-color: #008a58;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+<title>Artists Profiles - Artisty Online</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Artist 1 Profile -->
+    <div class="artist-profile">
+      <img src="art1.avif" alt="Artist 1 Photo" class="artist-photo">
+      <div class="artist-info">
+        <h2 class="artist-name">Neelam Padte</h2>
+        <p class="artist-description">Born in Mumbai, India, after I pursued a BFA I moved to the United States. In 1997, I was searching for a specific color combo area rug and I stumbled upon floorcloths. After I made my first floorcloth, I became passionate about art. In 2001, losing the job as a web designer gave me an opportunity to create floorcloths. I perfected the technique to produce durable floorcloths and I launched my website. I take pride in creating hundreds of unique floorcloths and bring joy to my customers.
+        </p>
+        <a href="http://www.floorcloth.net/" class="portfolio-btn">View Portfolio</a>
+      </div>
+    </div>
+
+    <div class="artist-profile">
+        <img src="art2.avif" alt="Artist 1 Photo" class="artist-photo">
+        <div class="artist-info">
+          <h2 class="artist-name">Amy Sanders De Melo</h2>
+          <p class="artist-description">As a Colombian-American ceramic artist and educator with vision loss, I strive to create work that speaks to the resiliency of the human spirit. I utilize Braille as a way of telling stories, encouraging meditation, and creating space for grieving and healing. My wheel-thrown porcelain work often features hand-textured Braille messages that encourage reflections on one’s own humanity and the necessity of empathy and empowerment for all individuals.
+             </p>
+          <a href="http://amysandersdemelo.com/" class="portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+
+      <div class="artist-profile">
+        <img src="art3.avif" alt="Artist 1 Photo" class="artist-photo">
+        <div class="artist-info">
+          <h2 class="artist-name">Cassandra Sanlon</h2>
+          <p class="artist-description">I am an artist and designer currently based in Chicago, Illinois. As a graduate student at the School of the Art Institute of Chicago I developed my practice to research and explore materials and processes utilized in both traditional and contemporary ceramics and textiles, to create functional decorative wares and hybrid art objects. Currently in my ceramics practice, I have been exploring
+             Neriage to create pieces inspired by the natural ephemeral colors and textures found in landscapes.
+          </p>
+          <a href="https://www.cassandrascanlon.com/" class="portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+    
+    <!-- Repeat the above structure for other artists -->
+
+  </div>
+</body>
+</html>
+

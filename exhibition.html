@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ... Your previous styles ... */
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+
+  .navbar {
+    text-align: center;
+    background-color: #444;
+    padding: 10px 0;
+    color: #fff;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #00a86b;
+  }
+
+  .header {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .header h1 {
+    font-family: 'Pacifico', cursive;
+    color: #00a86b;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    
+  }
+
+  .category {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .category img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .category-info {
+    padding: 15px;
+  }
+
+  .category-title {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  .art-piece {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .art-piece-price {
+    font-size: 18px;
+    color: #00a86b;
+    margin-top: 10px;
+  }
+
+  .add-to-cart-btn {
+    background-color: #00a86b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #008a58;
+  }
+
+  .view-more-btn {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .view-more-btn:hover {
+    background-color: #333;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .artist-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .artist {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px;
+  }
+
+  .artist img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .artist-info {
+    padding: 15px;
+  }
+
+  .artist-name {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  .artist-art-piece {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .artist-price {
+    font-size: 16px;
+    color: #00a86b;
+    margin-top: 10px;
+  }
+
+  .add-to-cart-btn {
+    background-color: #00a86b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #008a58;
+  }
+
+  .cart-icon {
+    margin-right: 5px;
+  }
+</style>
+<title>Art Gallery Exhibition</title>
+</head>
+<body>
+  <!-- ... Your previous HTML ... -->
+
+
+  <body>
+    <div class="navbar">
+      <a href="exhibition.html">Exhibitions</a>
+      <a href="artists.html">Artists' Profiles</a>
+      <a href="mycart.html">My Cart</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="blog.html">Blog Subscription</a>
+    </div>
+    <div class="header">
+      <h1>Discover the Beauty of Art</h1>
+      <p>Explore our diverse collection of exquisite artworks</p>
+    </div>
+
+  <div class="categories">
+    <!-- Category 1 -->
+    <div class="category">
+      <!-- Artist 1 -->
+      <div class="artist-section">
+        <div class="artist">
+          <img src="A1a.jpeg" alt="Artist 1 Art 1">
+          <div class="artist-info">
+            <h3 class="artist-name">Amy Sanders De Melo</h3>
+            <div class="artist-art-piece">
+              <p>Ceramics</p>
+              <p class="artist-price">$300</p>
+              <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+            </div>
+
+            <img src="A1b.jpeg" alt="Artist 1 Art 2">
+          <div class="artist-info">
+            <h3 class="artist-name">Amy Sanders De Melo</h3>
+            <div class="artist-art-piece">
+              <p>Ceramics</p>
+              <p class="artist-price">$200</p>
+              <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+            </div>
+
+            <img src="A1c.jpeg" alt="Artist 1 Art 3">
+            <div class="artist-info">
+              <h3 class="artist-name">Amy Sanders De Melo</h3>
+              <div class="artist-art-piece">
+                <p>Ceramics</p>
+                <p class="artist-price">$200</p>
+                <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+              </div>
+
+              <img src="A1d.jpeg" alt="Artist 1 Art 4">
+              <div class="artist-info">
+                <h3 class="artist-name">Amy Sanders De Melo</h3>
+                <div class="artist-art-piece">
+                  <p>Ceramics</p>
+                  <p class="artist-price">$500</p>
+                  <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+                </div>
+            <!-- Add more art pieces for Artist 1 -->
+          </div>
+        </div>
+        
+        <!-- Repeat the above structure for Artist 2 and Artist 3 -->
+        
+      </div>
+      <a href="https://shop.craftcouncil.org/collections/amy-sanders-de-melo" class="view-more-btn">View More From Artist</a>
+      
+
+
+      <div class="artist-section">
+        <div class="artist">
+          <img src="A2a.jpeg" alt="Artist 1 Art 1">
+          <div class="artist-info">
+            <h3 class="artist-name">Cassandra Scalon</h3>
+            <div class="artist-art-piece">
+              <p>Ceramics</p>
+              <p class="artist-price">$300</p>
+              <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+            </div>
+
+            <img src="A2b.jpeg" alt="Artist 1 Art 2">
+          <div class="artist-info">
+            <h3 class="artist-name">Cassandra Scalon</h3>
+            <div class="artist-art-piece">
+              <p>Ceramics</p>
+              <p class="artist-price">$200</p>
+              <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+            </div>
+
+            <img src="A2c.jpeg" alt="Artist 1 Art 3">
+            <div class="artist-info">
+              <h3 class="artist-name">Cassandra Scalon</h3>
+              <div class="artist-art-piece">
+                <p>Ceramics</p>
+                <p class="artist-price">$200</p>
+                <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+              </div>
+
+              <img src="A2d.jpeg" alt="Artist 2 Art 4">
+              <div class="artist-info">
+                <h3 class="artist-name">Cassandra Scalon</h3>
+                <div class="artist-art-piece">
+                  <p>Ceramics</p>
+                  <p class="artist-price">$500</p>
+                  <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+                </div> 
+                
+                <a href="https://shop.craftcouncil.org/collections/cassandra-scanlon" class="view-more-btn">View More From Artist</a>
+    </div>
+
+    <!-- Repeat the above structure for other categories -->
+
+    <div class="artist-section">
+      <div class="artist">
+        <img src="b1.jpeg" alt="Artist 1 Art 1">
+        <div class="artist-info">
+          <h3 class="artist-name">Neelam Padte</h3>
+          <div class="artist-art-piece">
+            <p>Fiber and Textiles</p>
+            <p class="artist-price">$300</p>
+            <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+          </div>
+
+          <img src="b2.jpeg" alt="Artist 1 Art 2">
+        <div class="artist-info">
+          <h3 class="artist-name">Neelam Padte</h3>
+          <div class="artist-art-piece">
+            <p>Fiber and Textiles</p>
+            <p class="artist-price">$200</p>
+            <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+          </div>
+
+          <img src="b3.jpeg" alt="Artist 1 Art 3">
+          <div class="artist-info">
+            <h3 class="artist-name">Neelam Padte</h3>
+            <div class="artist-art-piece">
+              <p>Fiber and Textiles</p>
+              <p class="artist-price">$200</p>
+              <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+            </div>
+
+            <img src="b4.jpeg" alt="Artist 2 Art 4">
+            <div class="artist-info">
+              <h3 class="artist-name">Neelam Padte</h3>
+              <div class="artist-art-piece">
+                <p>Fiber and Textiles</p>
+                <p class="artist-price">$500</p>
+                <button class="add-to-cart-btn"><span class="cart-icon">🛒</span>Add to Cart</button>
+              </div> 
+              
+              <a href="https://shop.craftcouncil.org/collections/design-village-llc" class="view-more-btn">View More From Artist</a>
+              
+  </div>
+ 
+  </div>
+</body>
+</html>

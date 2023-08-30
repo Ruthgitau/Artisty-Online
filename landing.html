@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  .store-name {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .landing-page {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .landing-title {
+    font-size: 36px;
+    color: #00a86b;
+    margin-bottom: 20px;
+  }
+
+  .landing-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .explore-btn {
+    background-color: #00a86b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+  }
+
+  .explore-btn:hover {
+    background-color: #008a58;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+</style>
+<title>Welcome to Our Art Gallery</title>
+</head>
+<body>
+  <div class="container">
+    <div class="landing-page">
+        <h1 class="store-name">Artisty Online</h1>
+      <h1 class="landing-title">Discover the Beauty of Art</h1>
+      <p class="landing-description">Explore our exquisite collection of artworks from diverse artists.</p>
+      <a href="exhibition.html" class="explore-btn">Explore Now</a>
+    </div>
+  </div>
+</body>
+</html>
